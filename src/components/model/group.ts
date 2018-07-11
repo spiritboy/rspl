@@ -19,7 +19,6 @@ export class group implements Serializable<group>{
   deserialize(input:any, parent:menu): group {
     this.parentMenu = parent;
     if(!input)return this;
-    this.id = input.id;
     this.title = input.title;
     this.type = input.type;
     this.uid = input.uid;
@@ -31,7 +30,6 @@ export class group implements Serializable<group>{
    public getData(): groupData {
      var res = new groupData();
      res.menuuid = this.parentMenu.uid;
-     res.id = this.id;
      res.uid = this.uid;
      res.title = this.title;
      this.questions.forEach(function (q, index) {

@@ -18,7 +18,7 @@ export class menu implements Serializable<menu> {
     input.groups.forEach((value:any, index:any) => {
       this.groups.push(new group().deserialize(value,this));
     });
-    this.search = new group().deserialize(input.search[0],this);
+    this.search = new group().deserialize(input.search,this);
     this.search.isSearch = true;
 
 

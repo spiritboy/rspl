@@ -1,0 +1,60 @@
+.clear{
+    clear:both;
+}
+header {
+}
+
+header h1 {
+    float:right;
+}
+
+header .div-buttons {
+    float:left;
+    font-size:18px;
+}
+header .div-buttons button{
+    margin: 5px;
+}
+
+header .div-buttons button.search-button {
+    color:darkblue;
+}
+header .div-buttons button.load-button {
+    color:#42cb27;
+}
+.nav-pills a{
+    position: relative;
+}
+button.icon{
+    background: transparent;
+    padding: 6px;
+    border:0;
+    margin: 5px;
+    font-size : 16px;
+}
+button.icon:hover {
+    background: lightblue;
+}
+.nav-pills a{
+    color:gray;
+    border-bottom: 1px solid lightgray;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: lightgray;
+}
+.nav-pills a button {
+    position: absolute;
+    left: 10px;
+    top: 0;
+    color: white;
+}
+button.spl-save{
+    color:darkgreen;
+}
+button.spl-cancel-save{
+    color:darkred;
+}
+
+table tr.active{
+    background-color: lightblue;
+}

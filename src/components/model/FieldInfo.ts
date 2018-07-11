@@ -1,14 +1,14 @@
 import {Serializable} from "./Serializable";
 import {question} from "./question";
 
-export class splComponentType implements Serializable<splComponentType>{
+export class FieldInfo implements Serializable<FieldInfo>{
   parentQuestion: question;
   type:string;
   isFree:boolean;
   isMultiSelect:boolean;
   clenderType:string;
 
-  deserialize(input:any,parent:question): splComponentType {
+  deserialize(input:any,parent:question): FieldInfo {
     this.parentQuestion = parent;
     if(!input)return this;
     this.type = input.type;
